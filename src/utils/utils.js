@@ -1,8 +1,31 @@
 export const randomNumber = () => {
-  return Math.ceil(Math.random() * 82);
+  const randomNumber = Math.ceil(Math.random() * 83);
+  if (randomNumber === 17) return 16;
+  return randomNumber;
 };
 
-export const getNoOfFilms = (...films) => {
+export const getNoOfFilms = (films) => {
+  if (!films) return;
   const filmsArr = films;
   return filmsArr.length;
+};
+
+export const compare = (property, playerValue, computerValue) => {
+  if (property === "height") {
+    if (playerValue < computerValue) {
+      return true;
+    } else if (playerValue > computerValue) {
+      return false;
+    } else {
+      return null;
+    }
+  } else {
+    if (playerValue > computerValue) {
+      return true;
+    } else if (playerValue < computerValue) {
+      return false;
+    } else {
+      return null;
+    }
+  }
 };
