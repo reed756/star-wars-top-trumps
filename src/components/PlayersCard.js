@@ -1,22 +1,12 @@
 import React from "react";
-import { getNoOfFilms, compare } from "../utils/utils";
+import { getNoOfFilms } from "../utils/utils";
 
 function PlayersCard(props) {
-  const noOfFilms = getNoOfFilms(props.character.films);
-
   const handleClick = (e) => {
     props.setPlayersChoice({
       key: e.target.id,
       value: e.target.innerText,
     });
-    console.log(
-      compare(
-        props.playerChoice.key,
-        props.playerChoice.value,
-        props.computer[`${props.playerChoice.key}`]
-      )
-    );
-    props.setTakenTurn(true);
   };
 
   return (
@@ -42,8 +32,8 @@ function PlayersCard(props) {
       </p>
       <p style={{ color: "white" }}>
         No. of Films:{" "}
-        <button id="noOfFilms" onClick={handleClick}>
-          {noOfFilms}
+        <button id="films" onClick={handleClick}>
+          {props.character.films}
         </button>
       </p>
     </div>

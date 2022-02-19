@@ -10,22 +10,12 @@ export const getNoOfFilms = (films) => {
   return filmsArr.length;
 };
 
-export const compare = (property, playerValue, computerValue) => {
-  if (property === "height") {
-    if (playerValue < computerValue) {
-      return true;
-    } else if (playerValue > computerValue) {
-      return false;
-    } else {
-      return null;
-    }
-  } else {
-    if (playerValue > computerValue) {
-      return true;
-    } else if (playerValue < computerValue) {
-      return false;
-    } else {
-      return null;
-    }
+export const compare = (properyy, playerValue, computerValue) => {
+  if (playerValue === "unknown" && computerValue !== "unknown") return false;
+  if (playerValue !== "unknown" && computerValue === "unknown") return true;
+  if (playerValue > computerValue) {
+    return true;
+  } else if (playerValue < computerValue) {
+    return false;
   }
 };
