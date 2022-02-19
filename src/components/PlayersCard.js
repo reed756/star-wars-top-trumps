@@ -1,5 +1,4 @@
 import React from "react";
-import { getNoOfFilms } from "../utils/utils";
 
 function PlayersCard(props) {
   const handleClick = (e) => {
