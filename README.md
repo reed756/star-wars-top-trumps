@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+To run this project, clone the respository then cd into it and open it using your favourite code editor. Run npm install to install the node modules and dependencies, then run npm start to open the project in a browser.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
