@@ -19,3 +19,8 @@
   -webkit-filter: invert(100%);
   filter: invert(100%);
 }
+@media only screen and (min-width: 768px) {
+  .button {
+    font-size: 20px;
+  }
+}

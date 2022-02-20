@@ -27,3 +27,11 @@
   width: 100%;
   margin: 5px 0;
 }
+@media only screen and (min-width: 768px) {
+  .cardText {
+    font-size: 20px;
+  }
+  .button {
+    font-size: 20px;
+  }
+}
