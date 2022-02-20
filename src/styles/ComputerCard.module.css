@@ -1,0 +1,13 @@
+.computerCardDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 20%;
+}
+.cardText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px 0;
+}

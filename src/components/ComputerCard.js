@@ -1,22 +1,22 @@
 import React from "react";
-import { getNoOfFilms } from "../utils/utils";
+import styles from "../styles/ComputerCard.module.css";
 
 function PlayersCard(props) {
   return (
-    <div style={{ color: "white" }}>
-      <h2 style={{ color: "white" }}>{props.character.name}</h2>
-      <p style={{ color: "white" }}>
+    <div className={styles.computerCardDiv}>
+      <h2>{props.character.name}</h2>
+      <p className={styles.cardText}>
         Height:   
         {props.character.height}
       </p>
-      <p style={{ color: "white" }}>
+      <p className={styles.cardText}>
         Mass:   
         {props.character.mass}
       </p>
-      <p style={{ color: "white" }}>
+      <p className={styles.cardText}>
         Birth Year:  {props.character.birth_year}
       </p>
-      <p style={{ color: "white" }}>No. of Films: {props.character.films}</p>
+      <p className={styles.cardText}>No. of Films: {props.character.films}</p>
     </div>
   );
 }
