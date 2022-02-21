@@ -19,4 +19,7 @@
   .cardText {
     font-size: 20px;
   }
+  .computerCardDiv {
+    margin: 50px 20px;
+  }
 }

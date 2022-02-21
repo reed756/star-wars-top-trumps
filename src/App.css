@@ -3,3 +3,9 @@
   width: 100%;
   background-image: url("https://starwarsblog.starwars.com/wp-content/uploads/2020/04/star-wars-backgrounds-14.jpg");
 }
+@media only screen and (min-width: 768px) {
+  .card-div {
+    display: flex;
+    justify-content: center;
+  }
+}

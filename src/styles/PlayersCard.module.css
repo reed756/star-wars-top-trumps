@@ -10,10 +10,12 @@
 }
 .button {
   height: 20px;
-  width: 20px;
+  min-width: 50px;
   border: none;
   background-color: yellow;
   color: black;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .button:hover {
   transition: 150ms;
@@ -33,5 +35,8 @@
   }
   .button {
     font-size: 20px;
+  }
+  .playersCardDiv {
+    margin: 50px 20px;
   }
 }

@@ -13,6 +13,7 @@
   font-weight: 1000;
   border: none;
   transition: 150ms;
+  cursor: pointer;
 }
 .button:hover {
   transition: 150ms;

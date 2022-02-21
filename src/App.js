@@ -63,13 +63,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PlayersCard
-        character={playersCard}
-        playerChoice={playerChoice}
-        setPlayersChoice={setPlayersChoice}
-        getWinner={getWinner}
-      />
-      <ComputerCard character={computersCard} />
+      <div className="card-div">
+        <PlayersCard
+          character={playersCard}
+          playerChoice={playerChoice}
+          setPlayersChoice={setPlayersChoice}
+          getWinner={getWinner}
+        />
+        <ComputerCard character={computersCard} />
+      </div>
       {winner ? <Result winner={winner} /> : null}
       <Deal setDealt={setDealt} />
       <Footer />
