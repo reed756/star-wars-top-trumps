@@ -7,16 +7,18 @@ function PlayersCard(props) {
       <h2>{props.character.name}</h2>
       <p className={styles.cardText}>
         Height:   
-        {props.character.height}
+        {props.winner ? props.character.height : "?"}
       </p>
       <p className={styles.cardText}>
         Mass:   
-        {props.character.mass}
+        {props.winner ? props.character.mass : "?"}
       </p>
       <p className={styles.cardText}>
-        Birth Year:  {props.character.birth_year}
+        Birth Year:  {props.winner ? props.character.birth_year : "?"}
       </p>
-      <p className={styles.cardText}>No. of Films: {props.character.films}</p>
+      <p className={styles.cardText}>
+        No. of Films: {props.winner ? props.character.films : "?"}
+      </p>
     </div>
   );
 }

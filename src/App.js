@@ -70,7 +70,7 @@ function App() {
           setPlayersChoice={setPlayersChoice}
           getWinner={getWinner}
         />
-        <ComputerCard character={computersCard} />
+        <ComputerCard character={computersCard} winner={winner} />
       </div>
       {winner ? <Result winner={winner} /> : null}
       <Deal setDealt={setDealt} />
